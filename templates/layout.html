@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="..\static\normalize.css">
+        <link rel="stylesheet" href="..\static\style.css">
+        <link rel="shortcut icon" type="image/ico" href="..\img\favicon.ico"/>
+        <script defer src="..\static\script.js"></script> 
+        <title>Bernethia's Beetles</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav-menu column-container centered-items"> 
+                <a href="index.html">
+                    <img src="..\img\bernethias-beetles-logo.png" alt="Bernethia's Beetles purple flower logo" id="site-logo">
+                </a>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-tabs">Beetle Bios</a></li>
+                    <li><a href="beetle-care.html" class="nav-tabs">Beetle Care</a></li>
+                    <li><a href="signup.html" class="nav-tabs">Subscribe</a></li>
+                    <li><a href="contests.html" class="nav-tabs">Contests</a></li>
+                </ul>
+            </nav>
+        </header>
+            {% block content %}{% endblock %}
+        <footer>
+            <small>&copy;2021, Bernethia Blossoms. All Rights Reserved.</small>
+        </footer>  
+    </body>
+</html>
+
