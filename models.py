@@ -14,9 +14,11 @@ class Fan(db.Model):
     lastname = db.Column('Last Name', db.String())
     email = db.Column('Email', db.String())
     birthdaymonth = db.Column('Birthday Month', db.String())
+    favoritebeetle = db.Column('Favorite Beetle', db.String())
 
     def __repr__(self):
         return f'''<First Name: {self.firstname}
                     Last Name: {self.lastname}
                     Email: {self.email}
-                    Birthday Month" {self.birthdaymonth}>'''
+                    Birthday Month: {self.birthdaymonth}
+                    Favorite Beetle: {self.favoritebeetle}>'''
