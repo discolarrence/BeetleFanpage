@@ -23,6 +23,8 @@ python app.py
 
 [Watch](https://youtu.be/xX17-3npbzg) a tour of the website.
 
+This site is a web application using the Flask & SQLAlchemy libraries for Python. 
+
 The website is designed mobile first, and it reorganizes for mobile, tablet and desktop views.
 
 Clicking images in the "Meet My Beetles!" section reveals a related modal with a bio and larger picture. Clicking the "X" icon on the modal will hide it. 
