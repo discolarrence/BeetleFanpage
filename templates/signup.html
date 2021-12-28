@@ -6,23 +6,23 @@
             <h1>Bernethia's Beetles Bi-weekly Bulletin</h1>
             <p>Exclusive photos and videos, care tips, and chances to win cool beetle-themed prizes.</p>
         </div>
-        <form class="signup-form">
+        <form action="{{ url_for('signup') }}" method="POST" class="signup-form">
             <h2 class="centered-items">Sign Up Today!</h2>
             <div class="form-item first-name column-container centered-items">
                 <label for="first-name-input">*First Name:</label>
-                <input type="text" id="first-name-input" name="first-name">
+                <input autocomplete="off" type="text" id="first-name-input" name="firstname">
             </div>
             <div class="form-item last-name column-container centered-items">
                 <label for="last-name-input">Last Name:</label>
-                <input type="text" id="last-name-input" name="last-name">
+                <input autocomplete="off" type="text" id="last-name-input" name="lastname">
             </div>
             <div class="form-item email column-container centered-items">
                 <label for="email-input">*Email:</label>
-                <input type="email" id="email-input" name="email" >
+                <input autocomplete="off" type="email" id="email-input" name="email" >
             </div>
             <div class="form-item birthday column-container centered-items">
                 <label for="birthday-input">*Birthday month:</label>
-                <select id="birthday-input" name="birthday">
+                <select id="birthday-input" name="birthdaymonth">
                     <option>--Choose One--</option>
                     <option>January</option>
                     <option>February</option>
@@ -40,7 +40,7 @@
             </div>
             <div class="form-item favorite-beetle column-container centered-items">
                 <label for="favorite-beetle-input">*Who is your favorite beetle?</label>
-                <select id="favorite-beetle-input" name="favorite-beetle">
+                <select id="favorite-beetle-input" name="favoritebeetle">
                     <option>--Choose One--</option>
                     <option>Big Girl</option>
                     <option>Blackbutt</option>
@@ -51,7 +51,7 @@
                 </select>
             </div>
             <div class="form-item submit-button column-container centered-items">
-                <button type="button" class="submit" id="submit-button">Submit</button>
+                <button type="submit" class="submit" id="submit-button">Submit</button>
             </div>
         </form>
         <div id="form-submit-message">

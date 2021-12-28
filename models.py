@@ -10,11 +10,11 @@ db = SQLAlchemy(app)
 class Fan(db.Model):
     __tablename__ = 'fans'
     id = db.Column(db.Integer, primary_key=True)
-    firstname = db.Column('First Name', db.String())
-    lastname = db.Column('Last Name', db.String())
-    email = db.Column('Email', db.String())
-    birthdaymonth = db.Column('Birthday Month', db.String())
-    favoritebeetle = db.Column('Favorite Beetle', db.String())
+    firstname = db.Column('firstname', db.String())
+    lastname = db.Column('lastname', db.String())
+    email = db.Column('email', db.String())
+    birthdaymonth = db.Column('birthdaymonth', db.String())
+    favoritebeetle = db.Column('favoritebeetle', db.String())
 
     def __repr__(self):
         return f'''<First Name: {self.firstname}

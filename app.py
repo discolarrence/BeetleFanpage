@@ -1,5 +1,6 @@
-from flask import Flask, render_template, url_for
-from models import db, app
+from flask import Flask, render_template, url_for, request
+from models import db, app, Fan
+import time
 
 @app.route('/')
 def index():
@@ -13,9 +14,20 @@ def contests():
 def beetle_care():
     return render_template('beetle-care.html')
 
-@app.route('/signup.html')
+@app.route('/signup.html', methods=['GET', 'POST'])
 def signup():
-    return render_template('signup.html')
+    if request.form:
+        new_fan = Fan(firstname=request.form['firstname'], 
+                    lastname = request.form['lastname'],
+                    email = request.form['email'],
+                    birthdaymonth = request.form['birthdaymonth'],
+                    favoritebeetle = request.form['favoritebeetle'])
+        db.session.add(new_fan)
+        db.session.commit()
+        time.sleep(5)
+        return render_template('signup.html')
+    else:
+        return render_template('signup.html')
 
 if __name__ == '__main__':
     db.create_all()
