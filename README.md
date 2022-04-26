@@ -36,6 +36,9 @@ If required form field input is in the incorrect format or missing, error messag
 Input from the form is saved in a database to serve as a contact list for the owner.
 ![Saved contacts in database](static/database.png)
 
+## History
+
+This project uses content from [Bernethia's Beetles Fanpage](https://github.com/discolarrence/bernethias-beetles-fanpage), my first web development project.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
