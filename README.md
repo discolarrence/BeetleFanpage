@@ -34,7 +34,7 @@ python app.py
 *  If required form field input is in the incorrect format or missing, error messages will appear below the form.
 
 *  Correctly formated user input is saved in a database to serve as a contact list for the owner.
-![Saved contacts in database](static/database.png)
+![Saved contacts in database](static/img/database.png)
 
 ## History
 
