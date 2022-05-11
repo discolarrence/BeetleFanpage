@@ -12,6 +12,7 @@ function clearFormErrorMessages() {
     formErrorMessages.length = 0;
 }
 
+/* All validate functions check a user input field. If invalid format, adds error message to list and adds css class that formats element to indicate error to user. If valid format, removes invalid format class from element.*/
 function validateFirstName() {
     if (firstName.value.length == 0 || nameRegex.test(firstName.value) == false) {
         formErrorMessages.push('Please enter your first name using only lower and upper case letters.');
@@ -48,6 +49,7 @@ function validateFavoriteBeetle() {
     }
 }
 
+/* Checks for and displays any error messages. If no error messages, generates welcome message using user input.*/
 function writeFormSubmitMessage() {
     if (formErrorMessages.length == 0) {
         formSubmitMessage.innerHTML = '';
